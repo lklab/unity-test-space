@@ -235,38 +235,39 @@ public class ScriptingMain : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Awake 1");
+        // Debug.Log("Awake 1");
         // IsAsTest();
         // Chapter2();
         // CoroutineTest();
         // VolatileTest();
         // METest1();
-        METest2();
+        // METest2();
         // METest3();
         // METest4();
         // METest5();
-        Debug.Log("Awake 2");
+        // Debug.Log("Awake 2");
+        text.text = "1";
     }
 
-    private void Update()
-    {
-        NativeArray<SomeData> input = new NativeArray<SomeData>(1000000, Allocator.Persistent);
-        NativeArray<SomeData> output = new NativeArray<SomeData>(1000000, Allocator.Persistent);
-        for (int i = 0; i < input.Length; ++i)
-        {
-            input[i] = new SomeData(i);
-        }
+    // private void Update()
+    // {
+    //     NativeArray<SomeData> input = new NativeArray<SomeData>(1000000, Allocator.Persistent);
+    //     NativeArray<SomeData> output = new NativeArray<SomeData>(1000000, Allocator.Persistent);
+    //     for (int i = 0; i < input.Length; ++i)
+    //     {
+    //         input[i] = new SomeData(i);
+    //     }
 
-        var job = new MyJob()
-        {
-            input = input,
-            output = output,
-        };
-        job.Schedule(input.Length, 64).Complete();
+    //     var job = new MyJob()
+    //     {
+    //         input = input,
+    //         output = output,
+    //     };
+    //     job.Schedule(input.Length, 64).Complete();
 
-        input.Dispose();
-        output.Dispose();
-    }
+    //     input.Dispose();
+    //     output.Dispose();
+    // }
 
     private int METest5_Add(dynamic left, dynamic right)
     {

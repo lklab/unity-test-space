@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Packed Assets
+  m_EditorClassIdentifier: 
+  m_GroupName: Packed Assets
+  m_GUID: 2018b737bbe749b43a7c07d8ecf1c2d0
+  m_SerializeEntries:
+  - m_GUID: 52b5d90975db91143bff3bc785f5c9ba
+    m_Address: Assets/Addressables/Jeans2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 82eb2327d85c8bc4c838b9a3ae0081ad, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 04e6ac2f58c7e8b4cb8cddc0a4a63a1a, type: 2}
+    - {fileID: 11400000, guid: 193e8b91b3d0d6540b60305339f89983, type: 2}

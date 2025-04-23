@@ -3,9 +3,9 @@ using UnityEditor;
 
 class JenkinsBuildScript
 {
-    static string[] SCENES = FindEnabledEditorScenes();
+    public static string[] SCENES = FindEnabledEditorScenes();
 
-    static void PerformBuild()
+    public static void PerformBuild()
     {
         BuildPipeline.BuildPlayer(FindEnabledEditorScenes(), "Builds/Windows/MyGame.exe", BuildTarget.StandaloneWindows, BuildOptions.None);
     }

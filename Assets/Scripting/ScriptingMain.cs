@@ -246,7 +246,7 @@ public class ScriptingMain : MonoBehaviour
         // METest4();
         // METest5();
         // Debug.Log("Awake 2");
-        text.text = "1";
+        text.text = "2";
     }
 
     // private void Update()
